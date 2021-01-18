@@ -10,7 +10,6 @@ function Search() {
 
   const handleClick = async e => {
     e.preventDefault()
-    console.log(process.env.X_RAPIDAPI_KEY, process.env)
     const {data} = await axios.get(
       `http://www.omdbapi.com/?apikey=${process.env.KEY}&s=${search}`
     )

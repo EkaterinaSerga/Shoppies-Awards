@@ -7,7 +7,6 @@ $assetsPath: '/public';
 
   &--search {
     display: flex;
-    margin: 10%;
     background-image: url('https://www.1843magazine.com/sites/default/files/styles/il_manual_crop_16_9/public/CHARLIE-CHAPLIN-Header.jpg');
     color: red;
     background-repeat: no-repeat;
@@ -31,5 +30,7 @@ $assetsPath: '/public';
   &--result {
     align-self: center;
     height: 50%;
+    width: 80%;
+    margin-bottom: 20px;
   }
 }

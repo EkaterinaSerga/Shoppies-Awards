@@ -17,7 +17,6 @@ router.get('/liked/:imdbId', async (req, res, next) => {
 
 router.post(`/liked/:imdbId`, async (req, res, next) => {
   try {
-    console.log(req.body)
     const newMovie = {
       title: req.body.movie.Title,
       imdbId: req.body.movie.imdbID,

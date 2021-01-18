@@ -25,10 +25,6 @@ const Movie = db.define('movie', {
     validate: {
       min: 0
     }
-  },
-  nominated: {
-    type: Sequelize.BOOLEAN,
-    dafaultValue: false
   }
 })
 
