@@ -12,7 +12,7 @@ function SingleMovie(props) {
   React.useEffect(() => {
     async function fetchData() {
       const {data} = await axios.get(
-        `http://www.omdbapi.com/?apikey=${process.env.KEY}&i=${id}`
+        `https://www.omdbapi.com/?apikey=${process.env.KEY}&i=${id}`
       )
       setMovie(data)
       const liked = await axios.get(`/api/movies/liked/${id}`)

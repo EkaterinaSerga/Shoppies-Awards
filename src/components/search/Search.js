@@ -11,7 +11,7 @@ function Search() {
   const handleClick = async e => {
     e.preventDefault()
     const {data} = await axios.get(
-      `http://www.omdbapi.com/?apikey=${process.env.KEY}&s=${search}`
+      `https://www.omdbapi.com/?apikey=${process.env.KEY}&s=${search}`
     )
     const movies = data.Search
     setSearchResult(movies)
